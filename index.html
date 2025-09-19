@@ -1,46 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Recovery Path</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-     <header>
-    <nav>
-      <h1>Recovery Together</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Counselor Chat</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-100 text-sm text-gray-600 px-6 py-2 flex justify-between items-center">
+    <span>Confidential Support • Available 24/7</span>
+    <a href="tel:18001234567" class="font-semibold text-blue-600 hover:underline">
+      📞 1-800-123-4567
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm">
+    <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+      <!-- Logo -->
+      <a href="/" class="text-2xl font-bold text-blue-700 tracking-tight">
+        Recovery Path
+      </a>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#programs" class="hover:text-blue-600">Programs</a>
+        <a href="#resources" class="hover:text-blue-600">Resources</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#help" class="ml-6 bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 shadow-md transition">
+        Get Help Now
+      </a>
+    </div>
   </header>
 
-
-  <section class="hero">
-    <div class="hero-text">
-      <h2>You’re Not Alone</h2>
-      <p>A safe, judgment-free space to connect, heal, and grow.</p>
-      <button onclick="getSupport()">Talk to a Counselor</button>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-50 to-blue-100">
+    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+        Find Hope. <span class="text-blue-600">Start Your Recovery Today.</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        We provide compassionate, confidential support to help you or your loved one take the first step toward healing.
+      </p>
+      <div class="mt-8 flex justify-center space-x-4">
+        <a href="#help" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-700">
+          Get Help Now
+        </a>
+        <a href="#programs" class="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
+          Learn More
+        </a>
+      </div>
     </div>
   </section>
 
-  <section class="intro">
-    <h3>Our Mission</h3>
-    <p>
-      We’re here to build a supportive community for people in recovery.
-      Whether you need someone to talk to, resources to stay on track,
-      or just a reminder that you belong—you’ve found a home.
+  <!-- Programs Section -->
+  <section id="programs" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center text-gray-800">Our Programs</h2>
+    <p class="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
+      Tailored recovery solutions designed to meet you where you are.
     </p>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <div class="bg-white rounded-2xl shadow p-8 text-center">
+        <h3 class="text-xl font-semibold text-blue-600">Detox Support</h3>
+        <p class="mt-4 text-gray-600">Safe, professional detox programs with 24/7 medical support.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-8 text-center">
+        <h3 class="text-xl font-semibold text-blue-600">Therapy & Counseling</h3>
+        <p class="mt-4 text-gray-600">One-on-one and group therapy sessions to heal the mind and body.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow p-8 text-center">
+        <h3 class="text-xl font-semibold text-blue-600">Aftercare Planning</h3>
+        <p class="mt-4 text-gray-600">Continued support to ensure long-term success and stability.</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Recovery Together | Safe. Supportive. Strong.</p>
+  <!-- Testimonials -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-800">What People Say</h2>
+      <div class="mt-12 grid gap-8 md:grid-cols-3">
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-gray-600">“Recovery Path changed my life. The support and care I received gave me hope again.”</p>
+          <p class="mt-4 font-semibold text-blue-600">– Alex M.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-gray-600">“Compassionate staff and effective programs. I finally feel like I’m on the right path.”</p>
+          <p class="mt-4 font-semibold text-blue-600">– Jamie L.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <p class="text-gray-600">“The community here gave me strength when I needed it the most.”</p>
+          <p class="mt-4 font-semibold text-blue-600">– Chris R.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section id="help" class="bg-blue-600 text-white text-center py-16">
+    <h2 class="text-3xl md:text-4xl font-bold">Ready to Begin Your Recovery?</h2>
+    <p class="mt-4 text-lg">Your journey to healing starts with a single step. Reach out now.</p>
+    <a href="tel:18001234567" class="mt-6 inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
+      Call 1-800-123-4567
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white">Recovery Path</h3>
+        <p class="mt-4 text-gray-400">Compassionate support for individuals and families navigating recovery.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-white">Quick Links</h3>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#programs" class="hover:underline">Programs</a></li>
+          <li><a href="#resources" class="hover:underline">Resources</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-white">Contact</h3>
+        <p class="mt-4">📞 1-800-123-4567</p>
+        <p class="mt-2">📧 support@recoverypath.org</p>
+        <p class="mt-2">123 Healing Way, Tucson, AZ</p>
+      </div>
+    </div>
+    <div class="mt-12 text-center text-gray-500 text-sm">
+      © 2025 Recovery Path. All rights reserved.
+    </div>
   </footer>
 
 </body>
