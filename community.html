@@ -2,56 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community - Recovery Together</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Community • Recovery Path</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <h1>Recovery Together</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="counselor.html">Counselor Chat</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-100 text-sm text-gray-600 px-6 py-2 flex justify-between items-center">
+    <span>Confidential Support • Available 24/7</span>
+    <a href="tel:18001234567" class="font-semibold text-blue-600 hover:underline">
+      📞 1-800-123-4567
+    </a>
+  </div>
+
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm">
+    <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-bold text-blue-700 tracking-tight">
+        Recovery Path
+      </a>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="programs.html" class="hover:text-blue-600">Programs</a>
+        <a href="community.html" class="text-blue-600 font-semibold">Community</a>
+        <a href="resources.html" class="hover:text-blue-600">Resources</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="index.html#help" class="ml-6 bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 shadow-md transition">
+        Get Help Now
+      </a>
+    </div>
   </header>
 
-  <section class="page-banner">
-    <h2>Community Support</h2>
-    <p>Together, we’re stronger. Share, listen, and connect.</p>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-50 to-blue-50">
+    <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+        Together, We Are <span class="text-blue-600">Stronger</span>
+      </h1>
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        Our community is built on hope, connection, and support. Join a network of people who understand the journey and walk it with you.
+      </p>
+      <a href="#join" class="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-700">
+        Join the Community
+      </a>
+    </div>
   </section>
 
-  <section class="community-intro">
-    <p>
-      Welcome to our recovery community—a safe place to find friendship,
-      encouragement, and accountability. In the future, this will be a space
-      where you can post, comment, and support one another in real time.
+  <!-- Peer Stories -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center text-gray-800">Real Stories of Hope</h2>
+    <p class="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
+      Hear from people who have walked the path of recovery and found strength in community.
     </p>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-600">“The group meetings gave me a safe place to share and feel heard. I wasn’t alone anymore.”</p>
+        <p class="mt-4 font-semibold text-blue-600">– Jordan P.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-600">“I met lifelong friends here who supported me every step of the way. Community makes recovery possible.”</p>
+        <p class="mt-4 font-semibold text-blue-600">– Taylor S.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <p class="text-gray-600">“Sharing my story gave me strength, and hearing others gave me hope. We heal together.”</p>
+        <p class="mt-4 font-semibold text-blue-600">– Riley K.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="community-posts">
-    <h3>Recent Stories (Demo)</h3>
-    <div class="post">
-      <h4>John D.</h4>
-      <p>“Today marks 60 days sober. Feeling proud and grateful for this group.”</p>
+  <!-- Events Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-800">Upcoming Events</h2>
+      <p class="mt-4 text-center text-gray-600 max-w-2xl mx-auto">
+        Connect with peers, join support groups, and participate in healing activities.
+      </p>
+
+      <div class="mt-12 grid gap-8 md:grid-cols-3">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Weekly Support Group</h3>
+          <p class="mt-2 text-gray-600">Every Tuesday at 6 PM – Safe, confidential space to share and support.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Mindfulness Workshop</h3>
+          <p class="mt-2 text-gray-600">Saturday, Oct 5 – Learn techniques to manage stress and stay grounded.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Family Support Night</h3>
+          <p class="mt-2 text-gray-600">Friday, Oct 11 – Resources and encouragement for families walking alongside loved ones.</p>
+        </div>
+      </div>
     </div>
-    <div class="post">
-      <h4>Sara M.</h4>
-      <p>“Rough day today, but I didn’t use. Grateful to be here.”</p>
-    </div>
-    <div class="post">
-      <h4>David K.</h4>
-      <p>“One week in—thanks for the encouragement everyone!”</p>
-    </div>
-    <p class="coming-soon">✨ Full community features coming soon! ✨</p>
   </section>
 
-  <footer>
-    <p>© 2025 Recovery Together | Safe. Supportive. Strong.</p>
+  <!-- Join Community CTA -->
+  <section id="join" class="bg-blue-600 text-white text-center py-16">
+    <h2 class="text-3xl md:text-4xl font-bold">Be Part of Our Community</h2>
+    <p class="mt-4 text-lg">Together, we lift each other up and move forward in recovery.</p>
+    <a href="contact.html" class="mt-6 inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold shadow hover:bg-gray-100">
+      Get Connected
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold text-white">Recovery Path</h3>
+        <p class="mt-4 text-gray-400">Compassionate support for individuals and families navigating recovery.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-white">Quick Links</h3>
+        <ul class="mt-4 space-y-2">
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="programs.html" class="hover:underline">Programs</a></li>
+          <li><a href="community.html" class="hover:underline">Community</a></li>
+          <li><a href="resources.html" class="hover:underline">Resources</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-white">Contact</h3>
+        <p class="mt-4">📞 1-800-123-4567</p>
+        <p class="mt-2">📧 support@recoverypath.org</p>
+        <p class="mt-2">123 Healing Way, Tucson, AZ</p>
+      </div>
+    </div>
+    <div class="mt-12 text-center text-gray-500 text-sm">
+      © 2025 Recovery Path. All rights reserved.
+    </div>
   </footer>
+
 </body>
 </html>
